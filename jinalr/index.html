@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jinalr</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- 헤더/네비 -->
+    <div id="header">
+        <div id="header_wrap">
+            <div id="logo">
+                <img src="images/logo.png" alt="로고">
+            </div>
+            <div id="nav">
+                <ul>
+                    <li><a href="#">예약</a></li>
+                    <li><a href="#">서비스</a></li>
+                    <li><a href="#">혜택</a></li>
+                    <li><a href="#">나비포인트</a></li>
+                    <li><a href="#">지니스토어</a></li>
+                </ul>
+            </div>
+            <div id="login">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">한국(한국어)/KWR</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메인배너/슬라이드 -->
+    <div id="mainbanner">
+        <div id="mainslide">
+            <div id="mainbanner1">
+                <img src="images/mainbanner1.png">
+            </div>
+            <div id="mainbanner2">
+                <img src="images/mainbanner2.png">
+                <a href="#">지금 응모하러가기 →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 왕복/인원 조회 , 날짜선택 및 조회 -->
+    <div id="itinerary">
+        <from action="" method="post" id="menu1">
+            <select>
+                <option>왕복</option>
+                <option>편도</option>
+                <option>다구간</option>
+            </select>
+            <select>
+                <option>성인</option>
+                <option>소아</option>
+                <option>유아</option>
+            </select>
+            <div>
+                <img src="images/bnicon.png" alt="보너스아이콘">
+                <a href="#">보너스 항공권예매</a>
+            </div>
+        </from>
+        <from action="" method="post" id="menu2">
+            <select>
+                <option>출발지</option>
+                <option>광주</option>
+                <option>서울</option>
+                <option>부산</option>
+            </select>
+            <select>
+                <option>도착지</option>
+                <option>서울</option>
+                <option>광주</option>
+                <option>제주</option>
+            </select>
+            <select>
+                <option>가는날</option>
+            </select>
+            <select>
+                <option>오는날</option>
+            </select>
+            <a href="#">다음</a>
+        </from>
+    </div>
+
+    <!-- 예약,탑승,운항 조회 아이콘 -->
+    <div id="menuicon">
+        <div id="reservation">
+            <a href="#">예약조회</a>
+        </div>
+        <div id="boardingcard">
+            <a href="#">탑승권</a>
+        </div>
+        <div id="flightinformation">
+            <a href="#">운항정보</a>
+        </div>
+    </div>
+
+    <!-- 최저가 항공권 조회/슬라이드 -->
+    <div id="ticketwrap">
+        <div id="planeticket">
+            <h3>최저가 항공권</h3>
+            <div id="ticketlist">
+                <div>
+                    <a href="#"><img src="images/bangkok.png" alt="방콕"></a>
+                    <h4>서울/인천 - 방콕</h4>
+                    <P>편도총액</P>
+                    <P>KRW 244,100</P>
+                </div>
+                <div>
+                    <a href="#"><img src="images/sapporo.png" alt="삿포로"></a>
+                    <h4>서울/인천 - 삿포로</h4>
+                    <P>편도총액</P>
+                    <P>KRW 108,300</P>
+                </div>
+                <div>
+                    <a href="#"><img src="images/balu.png" alt="코타키나발루"></a>
+                    <h4>서울/인천 - <br>코타키나발루</h4>
+                    <P>편도총액</P>
+                    <P>KRW 207,100</P>
+                </div>
+                <div>
+                    <a href="#"><img src="images/chiangmai.png" alt="치앙마이"></a>
+                    <h4>서울/인천 - 치앙마이</h4>
+                    <P>편도총액</P>
+                    <P>KRW 200,100</P>
+                </div>
+            </div>
+            <button id="prev"><span>prev image</span></button>
+            <button id="next"><span>next image</span></button>
+        </div>
+    </div>
+    <!-- 기타안내 아이콘  -->
+    <div id="iconwrap">
+        <ul id="iconlist">
+            <li>
+                <a href="#"><img src="images/seaticon.png" alt="사전좌석"></a>
+                <p>사전좌석</p>
+            </li>
+            <li>
+                <a href="#"><img src="images/ordericon.png" alt="기내식주문"></a>
+                <p>기내식주문</p>
+            </li>
+            <li>
+                <a href="#"><img src="images/eventicon.png" alt="이벤트존"></a>
+                <p>이벤트존</p>
+            </li>
+            <li>
+                <a href="#"><img src="images/instaricon.png" alt="인스타지점"></a>
+                <p>인스타지점</p>
+            </li>
+            <li>
+                <a href="#"><img src="images/cardicon.png" alt="카드할인"></a>
+                <p>카드할인</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 공지사항  -->
+    <div id="n100">
+        <div id="notice">
+            <h3>공지사항</h3>
+            <ul>
+                <li><a href="#">국제선 나비포인트 적립률 변경안내</a><span>2023-02-08</span></li>
+                <li><a href="#">국내선 유류할증료 안내(2023년 3월)</a><span>2023-02-06</span></li>
+                <li><a href="#">[한국발 외] 국제선 유류 할증료(2023년 2월)</a><span>2023-01-31</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <div id="footer">
+        <div id="footermenu1">
+            <h5>회사안내</h5>
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">기업개요</a></li>
+                <li><a href="#">기업지배구조</a></li>
+                <li><a href="#">지속가능경영</a></li>
+                <li><a href="#">ci소개</a></li>
+                <li><a href="#">항공기소개</a></li>
+                <li><a href="#">투자정보</a></li>
+                <li><a href="#">화물운송</a></li>
+                <li><a href="#">홍보센터</a></li>
+            </ul>
+        </div>
+        <div id="footermenu2">
+            <h5>약관 및 안내</h5>
+            <ul>
+                <li><a href="#">개인정보 처리 방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">운송 및 기타 고지사항</a></li>
+                <li><a href="#">항공교통이용자 서비스계획</a></li>
+                <li><a href="#">피해구제계획</a></li>
+                <li><a href="#">e-티켓 확인증/ 법적고지문</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+        </div>
+        <div id="footermenu3">
+            <h5>고객서비스</h5>
+            <ul>
+                <li><a href="#">자주 묻는 질문(FAQ) </a></li>
+                <li><a href="#">고객의말씀(Q&A)</a></li>
+                <li><a href="#">기내유실물찾기</a></li>
+                <li><a href="#">서류양식함</a></li>
+            </ul>
+        </div>
+        <div id="wrap">
+            <div id="snslogo">
+                <a href="https://www.instagram.com/jinair_LJ/" target="_blank"><img src="images/footer_instar.png"
+                        alt="인스타"></a>
+                <a href="https://www.facebook.com/JinAir" target="_blank"><img src="images/footer_facebook.png"
+                        alt="페이스북"></a>
+                <a href="https://www.youtube.com/user/JinAir0717" target="_blank"><img src="images/footer_youtube.png"
+                        alt="유투브"></a>
+            </div>
+            <div id="shortcut">
+                <h5>APP 다운로드</h5>
+                <a href="https://apps.apple.com/kr/app/id435624636?ls=1" target="_blank">ios</a>
+                <a href="https://play.google.com/store/apps/details?id=com.jinair.android" target="_blank">Google
+                    play</a>
+                <a href="https://agent.jinair.com/login" target="_blank">대리점바로가기</a>
+            </div>
+        </div>
+        <div id="footer_ntc">
+            <p>고객서비스센터 1600-6200, 02-6099-1200 업무시간 오전 09:00 ~ 오후 18:00<br>
+                ㈜진에어대표이사 박병률 사업자등록번호 121-81-89086 통신판매업 신고번호 : 제2008-서울 강서-0408<br>
+                주소 : 서울시 강서구 공항대로 453 개인정보보호책임자 : 이광<br>
+                Copyright © JIN AIR. All Rights Reserved</p>
+        </div>
+        <from action="" method="post" id="emailinput">
+            <h3>뉴스레터신청</h3>
+            <input type="text" placeholder="Email Address">
+            <input type="submit" value="">
+        </from>
+    </div>
+</body>
+
+</html>

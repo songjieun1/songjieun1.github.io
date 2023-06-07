@@ -1,0 +1,575 @@
+body {
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+#header{
+    width: 100%;
+    
+}
+
+#header_wrap{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+}
+
+#logo {margin-top: 10px;}
+#logo > img {
+    width: 120px;
+    height: 40px;
+}
+
+#nav > ul { display: flex;}
+
+#nav > ul > li {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 40px;
+}
+
+
+#login { margin-top:10px;}
+#login > ul{ display: flex;}
+
+#login > ul > li{
+    font-size: 12px;
+
+}
+
+#login > ul > li > a{
+    color: #959698;
+
+}
+
+#login > ul > li:first-child > a::after {
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    margin: 0 8px;
+    content: '';
+    vertical-align: middle;
+    background: #ccc;
+}
+
+#mainbanner{
+    width: 1519px;
+    height: 555px;
+    overflow: hidden;
+    position: relative;
+}
+
+#mainslide{
+    width: 200%;
+    height: 100%px;
+
+}
+
+#mainslide > div {
+    width: 1519px;
+    height: 555px;
+    float: left;
+}
+
+
+#mainbanner1 > img{
+    width: 1519px;
+}
+
+#mainbanner2 {
+    position: relative;
+}
+#mainbanner2 > img{
+    width: 1519px;
+}
+
+#mainbanner2 > a {
+    display: block;
+    position: absolute;
+    background-color:rgba(110,110,111,0.7);
+    opacity: 0.7;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    bottom:90px;
+    left: 46%;
+
+    
+}
+#itinerary {
+    width: 100%;
+    position: absolute;
+    bottom: 137px;
+    z-index: 999;
+}
+#menu1{
+    width: 260px;
+    background-color:rgba(110,110,111,0.7);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-left: 350px;
+
+
+}
+
+#menu1 > select {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+#menu1 > select > option {
+    color: #6e6e6f;
+}
+
+#menu1 > select:nth-of-type(2) {
+    padding: 0 10px;
+}
+
+#menu1 > div {
+   display: flex;
+   align-items: center;
+}
+#menu1 > div > img {
+    width: 20px;
+    height: 20px;
+}
+#menu1 > div > a  {
+    color: #fff;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+#menu2{
+    background-color:rgba(110,110,111,0.7);
+    display: flex;
+    align-items: center;
+    padding-left: 340px;
+
+
+}
+
+#menu2 > select {
+     background-color: #fff;
+     width: 150px;
+     height: 40px;
+     border: none;
+     margin: 5px 20px;
+     padding: 0 5px;
+     font-weight: bold;
+     color: #000;
+}
+
+#menu2 > a {
+    background-color: #bdd600;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+#menuicon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#menuicon > div {
+    margin:0 20px;
+    font-size: 18px;
+    
+}
+
+#reservation > a {
+    display: block;
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+    background:url(../images/icon1.png) no-repeat;
+    padding: 8px 0 9px 90px;
+
+}
+
+#boardingcard > a {
+    display: block;
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+    background:url(../images/icon2.png) no-repeat;
+    padding: 8px 0 9px 90px;
+}
+
+#flightinformation > a{
+    display: block;
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+    background:url(../images/icon3.png) no-repeat;
+    padding: 8px 0 9px 90px;
+}
+
+
+#ticketwrap{
+    width: 100%;
+}
+#planeticket {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+#planeticket > h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px 0;
+    padding-left: 40px;
+    
+}
+
+#ticketlist {
+    display:flex;
+    justify-content: center;
+    text-align: left;
+
+}
+
+
+#ticketlist > div {
+    margin:20px 20px
+}
+#ticketlist > div > h4 {
+    font-size: 18px;
+    margin-top: 15px;
+    
+}
+
+#ticketlist > div > p:nth-of-type(1) {
+    margin-top: 5px;
+    margin-bottom:10px;
+}
+
+#ticketlist> div > p:nth-of-type(2) {
+   color: #7a0146;
+}
+
+#prev,
+#next {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    top: 40%;
+
+}
+
+
+
+#prev {
+    left:0;
+    background: url(../../jinalr/images/prevbtn.png) no-repeat left center;
+}
+
+#next {
+    right:0;
+    background: url(../../jinalr/images/nextbtn.png) no-repeat right center;
+}
+
+button>span {
+    display: none;
+}
+
+
+#iconwrap {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+#iconlist {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+#iconlist > li  {
+    margin:0 50px;
+  
+}
+
+#iconlist > li > p{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #7a0146;
+    text-align: center;
+    
+
+}
+#n100{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#notice{
+    width:1200px;
+    margin:auto ;
+    
+}
+
+#notice > h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    
+}
+
+
+#notice > ul > li {
+    font-size: 16px;
+    text-align:left;
+    border-bottom: 1px solid #959698;
+    padding-bottom: 15px; 
+    margin: 20px 0;
+    
+
+}
+
+#notice > ul > li > a {
+    display: block;
+    background: url(../images/notice_style.png)no-repeat left center;
+    padding-left: 25px;
+}
+
+
+
+#notice > ul > li > a:hover{
+    color: #7a0146;
+} 
+
+#notice > ul > li > span {
+    float: right;
+    color: #959698;
+    font-size: 14px;
+}
+
+#footer {
+    background-color: #cacacb;
+    padding: 20px 20px;
+    position: relative;
+}
+
+#footermenu1 { 
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    line-height: 1.8;
+
+    
+}
+
+#footermenu1 > h5 {
+    font-weight: bold;
+    margin-right:20px ;
+}
+
+#footermenu1 > ul {
+    display: flex;
+
+}
+#footermenu1 > ul > li {
+    margin: 0 10px;
+    font-size: 14px;
+
+}
+
+#footermenu1 > ul > li > a {color: #4d4c4c;}
+
+#footermenu2 { 
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    line-height: 1.8;
+
+}
+#footermenu2 > h5 {
+    font-weight: bold;
+    margin-right:20px ;
+}
+
+#footermenu2 > ul {
+   display: flex;
+}
+#footermenu2 > ul > li {
+    margin: 0 10px;
+    font-size: 14px;
+
+}
+
+#footermenu2 > ul > li > a {color: #4d4c4c;}
+
+#footermenu3 { 
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    line-height: 1.8;
+    
+
+}
+#footermenu3 > h5 {
+    font-weight: bold;
+    margin-right:20px ;
+}
+
+#footermenu3 > ul {
+    display: flex;
+}
+#footermenu3 > ul > li {
+     margin: 0 10px;
+    font-size: 14px;
+
+}
+
+#footermenu3 > ul > li > a {color: #4d4c4c;}
+
+
+#wrap {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+
+}
+
+#snslogo {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+
+#snslogo > a {
+    margin: 0 5px;
+}
+
+#shortcut {
+    display: flex;
+    align-items: center;
+}
+
+#shortcut > h5 {
+    color: #4d4c4c;
+    margin: 0 10px;
+}
+
+#shortcut > a  {
+    margin: 15px 5px;
+    color: #4d4c4c;
+}
+
+#shortcut > a:nth-of-type(1){
+    display: block;
+    background: url(../images/footer_ios.png)no-repeat;
+    padding: 8px 0 9px 40px;
+}
+
+#shortcut > a:nth-of-type(2){
+    display: block;
+    background: url(../images/footer_google.png)no-repeat;
+    padding: 8px 0 9px 30px;
+}
+
+#shortcut > a:nth-of-type(3){
+    display: block;
+    background: url(../images/footer_shortcut.png)no-repeat;
+    padding: 8px 0 9px 40px;
+}
+
+
+
+#footer_ntc {
+    width: 1200px;
+    margin: auto;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #4d4c4c;
+    
+}
+
+
+#emailinput {
+    position: absolute;
+    top:120px;
+    right: 350px;
+}
+#emailinput > h3 { 
+    color: #4d4c4c;
+    margin-bottom: 15px;
+
+}
+
+#emailinput > input[type=text]{
+    width: 200px;
+    height: 30px;
+    border: none;
+    
+}
+
+#emailinput > input[type=text]:focus {
+    outline: none;
+}
+
+#emailinput > input[type=submit]{
+    width: 60px;
+    height: 35px;
+    border: none;
+    background-image: url(../images/footer_logo.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left:-10px;
+    
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
+

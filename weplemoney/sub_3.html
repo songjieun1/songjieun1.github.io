@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weple money</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <!-- 헤더/네비 -->
+    <div id="header">
+        <div id="header_wrap">
+            <div id="logo">
+                <img src="images/logo.png" alt="로고">
+            </div>
+            <div id="nav">
+                <ul>
+                    <li><a href="#">마이</a></li>
+                    <li><a href="#">설정</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="w100">
+    <!-- 안내문구 -->
+     <div id="guidetitle">
+        <h3>설정창 안내</h3>
+         <p>
+            해당 페이지를 통해 더욱 편리하게 위플머니를 사용하실 수 있습니다.<br>
+            아래 버튼을 클릭하시고, 월 시작 일자/비밀번호 설정/언어 등 변경 하실 수 있으며,변경 방법 등은 해당내용 클릭 시 확인 하실 수 있습니다.
+         </p>
+     </div>
+
+     <!-- 설정창탭 -->
+     <div id="tabbox">
+        <form action="" method="post">
+            <input type="radio" name="tab" id="month">
+            <input type="radio" name="tab" id="week">
+            <input type="radio" name="tab" id="password" checked>
+            <input type="radio" name="tab" id="data">
+            <input type="radio" name="tab" id="language">
+            <input type="radio" name="tab" id="reset">
+            <label for="month" id="tb_mon">월 시작 일자</label>
+            <label for="week" id="tb_w">주 시작 요일</label>
+            <label for="password" id="tb_pw">비밀번호</label>
+            <label for="data" id="tb_d">데이터 이월</label>
+            <label for="language" id="tb_lg">언어설정</label>
+            <label for="reset" id="tb_r">초기화</label>
+             <div id="tb_box">
+                <h5>비밀번호 설정</h5>
+                <p>※ 암호는 반드시 숫자로만 기입합니다.<br>
+                   ※ 암호를 분실 했을 시, 가계부를 삭제하고 다시 설치해야합니다.(기존의 데이터는 삭제됩니다.)
+                </p>
+                <div>
+                    <h6>사용할 비밀번호 입력 :</h6>
+                    <input type="password" placeholder="">
+                    <input type="submit" value="확인">
+                </div>
+                <div> 
+                    <h6>다시 입력 :</h6>
+                    <input type="password" placeholder="">
+                    <input type="submit" value="완료">
+                </div>
+             </div>
+             <div id="tb_box2">
+                <h5>초기화 하시겠습니까?</h5>
+                <p>※ 초기화시, 기존에 저장되있던 데이터가 전부 사라집니다.<br>
+                   ※ 초기화된 데이터는 복구 되지않으므로 유의하시기바랍니다.    
+                </p>
+                <button type="submit">데이터 초기화</button>
+             </div>
+        </form>
+    </div>
+     </div>
+     <!-- 푸터-->
+     <div id="footer">
+        <h4>Information</h4>
+        <ul>
+         <li><a href="#">피드백 보내기</a></li>
+         <li><a href="#">리뷰 작성하기</a></li>
+        </ul>
+        <div id="shortcut">
+          <h4>APP 다운로드</h4>
+          <a href="#">ios</a>
+          <a href="#">Googleplay</a>
+        </div>
+        <p>2011BUMbleBee</p>
+     </div>
+</body>
+</html>

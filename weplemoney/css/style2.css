@@ -1,0 +1,291 @@
+body {
+    background-color: #fff;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: #ccc;
+}
+
+a {
+    text-decoration: none;
+    color:inherit
+}
+
+li {
+    list-style: none;
+}
+
+#header{
+    width: 100%;
+}
+
+#header_wrap{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    margin-top: 10px;
+}
+
+#logo > img{
+    width:200px;
+    height: 40px;
+}
+
+#nav{
+   margin-top: 25px;
+}
+
+#nav > ul {
+    display: flex;
+
+}
+
+#nav > ul > li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #53c7bc;
+    margin: 0 6px;
+}
+
+
+#tabbox {
+    width:1200px;
+    margin: auto;
+}
+
+#tabbox > form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#tabbox > form > input {
+    display: none;
+}
+
+#tabbox > form > label {
+    display: block;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #f2f2f3;
+    text-align: center;
+    line-height: 460px;
+    font-size: 16px;
+    color: #53c7bc;
+    font-weight: bold;
+    margin: 10px 25px;
+    cursor: pointer;
+
+
+}
+
+#tb_mon {
+    background: url(../images/sub_icon1.png) no-repeat;
+    background-position: center;
+}
+
+#tb_w {
+    background: url(../images/sub_icon2.png) no-repeat;
+    background-position: center;
+}
+
+#tb_d {
+    background: url(../images/sub_icon3.png) no-repeat;
+    background-position: center;
+}
+
+#tb_a{
+    background: url(../images/sub_icon4.png) no-repeat;
+    background-position: center;
+}
+
+#calenderbox {
+    width: 895px;
+    margin-top: 30px;
+    background-color: #f2f2f3;
+    border-radius: 10px;
+    padding: 30px;
+    display: none;
+}
+
+#Calender > div > button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    color:#828383;
+}
+
+#Calender {
+    margin: auto;
+    width: 895px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+
+#Calender > div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: bold;
+    color: #828383;
+    padding-top: 20px;
+
+}
+
+#cd > ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center
+}
+
+#cd > ul > li {
+    width: calc(100% / 7);
+    position: relative;
+    color: #828383;
+    font-weight: bold;
+}
+
+
+
+#cd > ul > li::before{
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#days {
+    margin-bottom: 20px;
+}
+
+#days > li{
+    z-index: 1;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+#days > li:active{
+    color: #fff;
+}
+
+
+#days > li:hover::before {
+    background: #f2f2f3
+}
+
+#days > li:active::before {
+    background: #7289f3;
+}
+
+#days > li:nth-of-type(1){
+    color: #aaa;
+}
+
+#days > li:nth-of-type(2){
+    color: #aaa;
+}
+
+#days > li:nth-of-type(3){
+    color: #aaa;
+}
+
+#days > li:nth-of-type(4){
+    color: #aaa;
+}
+
+#weeks > li{
+    font-weight: bold;
+    z-index: 1;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#month:checked ~ #tb_mon {
+    transform: scale(1.1);
+}
+
+#week:checked ~ #tb_w {
+    transform: scale(1.1);
+}
+
+#day:checked ~ #tb_d {
+    transform: scale(1.1);
+}
+
+#all:checked ~ #tb_a {
+    transform: scale(1.1);
+}
+
+#month:checked ~ #calenderbox {
+    display: block;
+}
+
+#footer{
+    background-color: #53c7bc;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+#footer > h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#footer > ul {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#footer > ul > li {
+    margin: 0 20px;
+}
+
+#shortcut{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+#shortcut > a {
+    margin: 0 10px;
+}
+
+#shortcut > a:nth-of-type(1) {
+    display: block;
+    background: url(../images/footerlogo_ios.png) no-repeat;
+    padding: 12px 0 9px 40px;
+}
+
+#shortcut > a:nth-of-type(2){
+    display: block;
+    background: url(../images/footerlogo_google.png) no-repeat;
+    padding: 12px 0 9px 40px;
+}
+
+#footer > p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+}
