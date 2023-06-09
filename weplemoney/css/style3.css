@@ -28,7 +28,7 @@ li {
     margin-top: 10px;
 }
 
-#logo > img{
+#logo > a > img{
     width:200px;
     height: 40px;
 }
@@ -154,6 +154,7 @@ li {
     width: 300px;
     height: 40px;
     border: none;
+    font-size: 18px;
 }
 
 #tb_box > div:nth-of-type(1) > input[type=password]:focus{
@@ -183,13 +184,14 @@ li {
 #tb_box > div:nth-of-type(2) > h6 {
     font-size: 15px;
     color: #828383;
-    margin-right: 90px;
+    margin-right: 80px;
 }
 
 #tb_box > div:nth-of-type(2) > input[type=password] {
     width: 300px;
     height: 40px;
     border: none;
+    font-size: 18px;
 }
 
 #tb_box > div:nth-of-type(2) > input[type=password]:focus{

@@ -17,12 +17,12 @@
     <div id="header">
         <div id="header_wrap">
             <div id="logo">
-                <img src="images/logo.png" alt="로고">
+               <a href="file:///D:/repo/songjieun1.github.io/weplemoney/index.html"><img src="images/logo.png" alt="로고"></a> 
             </div>
             <div id="nav">
                 <ul>
                     <li><a href="#">마이</a></li>
-                    <li><a href="#">설정</a></li>
+                    <li><a href="file:///D:/repo/songjieun1.github.io/weplemoney/sub_3.html">설정</a></li>
                 </ul>
             </div>
         </div>
@@ -56,7 +56,7 @@
                             <li>금</li>
                             <li>토</li>
                         </ul>
-                        <ul id="days">
+                        <ul id="days" class="active">
                             <li id="inactive">28</li>
                             <li id="inactive">29</li>
                             <li id="inactive">30</li>
@@ -97,6 +97,17 @@
             </div>
         </form>
     </div>
+
+    <!-- 날짜 클릭시 나올 팝업창 -->
+     <div id="popup">
+       <form action="" method="post">
+        <button>x</button>
+        <label for="amounts"></label>
+        <input type="text" name="amount">
+        <button type="submit">입금</button>
+        <button type="submit">지출</button>
+       </form>
+     </div>
 
 
 

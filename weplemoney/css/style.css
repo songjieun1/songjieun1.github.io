@@ -199,8 +199,37 @@ li {
 }
 
 #btn > a:hover{
-    background-color: rgba(114, 137, 243, 0.7);
+    animation-name: wobble-top;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
 }
+
+@keyframes wobble-top {
+    16.65% {
+      transform: skew(-15deg);
+    }
+  
+    33.3% {
+      transform: skew(12deg);
+    }
+  
+    49.95% {
+      transform: skew(-8deg);
+    }
+  
+    66.6% {
+      transform: skew(5deg);
+    }
+  
+    83.25% {
+      transform: skew(-3deg);
+    }
+  
+    100% {
+      transform: skew(0);
+    }
+  }
 
 #footer{
     background-color: #53c7bc;

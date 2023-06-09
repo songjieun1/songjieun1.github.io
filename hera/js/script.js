@@ -56,7 +56,7 @@ $(function () {
             $('#heramomentimg').css('left,0');
         });
 
-    }, 3000);
+    }, 2000);
 
     //버튼 클릭시 슬라이드 이동  
     $('#prev').click(function () {

@@ -26,7 +26,8 @@ li {
 }
 
 #logo {margin-top: 10px;}
-#logo > img {
+
+#logo > a > img {
     width: 120px;
     height: 40px;
 }
