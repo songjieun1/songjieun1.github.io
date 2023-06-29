@@ -1,0 +1,153 @@
+body {
+    background-color: #dabfa3;
+    font-family: 'gothic a1', sans-serif;
+    color: #04083f;
+
+}
+
+li {
+    list-style: none;
+}
+
+#jinalr{
+    width:1200px;
+    height: 520px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+
+#jinalr > h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+#wrap{
+    width: 1200px;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+}
+
+#slide{
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#slide > div{
+    width: 1200px;
+    height: 420px;
+    float: left;
+}
+
+#weple{
+    width: 1200px;
+    height: 783px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#weple > h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+#wrap2{
+    width: 1200px;
+    height: 683px;
+    position: relative;
+    overflow: hidden;
+}
+
+#slide2{
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#slide2 > div{
+    width: 1200px;
+    height: 683px;
+    float: left;
+}
+
+#hera{
+    width: 1200px;
+    height: 725px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+
+#hera > h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+
+#wrap3{
+    width: 1200px;
+    height: 625px;
+    position: relative;
+    overflow: hidden;
+}
+
+#slide3{
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#slide3 > div{
+    width: 1200px;
+    height: 625px;
+    float: left;
+}
+
+#ysl{
+    width: 1200px;
+    height: 585px;
+    margin: 0 auto;
+}
+
+#ysl > h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+#wrap4{
+    width: 1200px;
+    height: 485px;
+    position: relative;
+    overflow: hidden;
+}
+
+#slide4{
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#slide4 > div{
+    width: 1200px;
+    height: 485px;
+    float: left;
+}
+

@@ -257,7 +257,8 @@ span {
 #html>p:hover::before{
     content: "69%";
     color: #ec5624;
-    font-size: 22px;
+    font-size: 20px;
+    margin-left: 12px;
     
 }
 
