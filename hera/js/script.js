@@ -8,7 +8,7 @@ $(function () {
             left: '-100%'
         },'slow', function () {
             $('#sildewrap > div:first-child').appendTo('#sildewrap ');
-            $('#sildewrap').css('left,0');
+            $('#sildewrap').css('left', 0);
         });
         
     }, 3000);

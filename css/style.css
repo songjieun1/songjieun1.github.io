@@ -18,14 +18,14 @@ a {
 
 #header {
     margin:40px 0;
-    color: #dabfa3;
+    color: #04083f;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 35px;
     
 }
 
-#header > h2 {
+#header > h3 {
     display: none;
 }
 

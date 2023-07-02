@@ -17,11 +17,12 @@ li {
 
 }
 
-#jinalr > h3{
+#jinalr > h2{
     font-size: 25px;
     margin-bottom: 20px;
     margin-top: 40px;
     font-weight: bold;
+    
 }
 
 #wrap{
@@ -52,7 +53,7 @@ li {
     margin-bottom: 50px;
 }
 
-#weple > h3{
+#weple > h2{
     font-size: 25px;
     margin-bottom: 20px;
     margin-top: 40px;
@@ -88,7 +89,7 @@ li {
 
 }
 
-#hera > h3{
+#hera > h2{
     font-size: 25px;
     margin-bottom: 20px;
     margin-top: 40px;
@@ -123,7 +124,7 @@ li {
     margin: 0 auto;
 }
 
-#ysl > h3{
+#ysl > h2{
     font-size: 25px;
     margin-bottom: 20px;
     margin-top: 40px;

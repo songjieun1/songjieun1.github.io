@@ -4,7 +4,7 @@ $(function () {
     var typingIdx = 0;
 
     
-    var typingTxt = $("#header > h2").text();
+    var typingTxt = $("#header > h3").text();
 
     typingTxt = typingTxt.split(""); // 한글자씩 나오게자름 
 

@@ -1,0 +1,56 @@
+body {
+    background-color: #04083f;
+    font-family: 'gothic a1', sans-serif;
+    color:  #dabfa3;
+
+}
+
+
+#olive{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#olive > h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #a3cc48;
+    font-weight: bold;
+}
+
+#olive > p{
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #a3cc48;
+    font-weight: bold;
+}
+
+#olive > img{
+    margin-bottom: 30px;
+}
+
+#ediya{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+#ediya > h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #edeede;
+    font-weight: bold;
+}
+
+#ediya > p{
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #edeede;
+    font-weight: bold;
+}
+
+#ediya > img{
+    margin-bottom: 30px;
+}

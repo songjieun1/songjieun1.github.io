@@ -82,7 +82,7 @@ li {
 }
 
 #sildewrap > div{
-    width: 100%;
+    width:100%;
     height: 990px;
     
 }
@@ -537,12 +537,12 @@ li {
 
 
 #prev {
-    left:388px;
+    left:381px;
     background: url(../../hera/images/heramoment_btn_n.png) no-repeat left center;
 }
 
 #next {
-    right:393px;
+    right:387px;
     background: url(../../hera/images/heramoment_btn_p.png) no-repeat right center;
 }
 
