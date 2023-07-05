@@ -1,7 +1,7 @@
 body {
-    background-color: #dabfa3;
+    background-color: #04083f;
     font-family: 'gothic a1', sans-serif;
-    color: #04083f;
+    color:  #dabfa3;
 
 }
 
@@ -18,10 +18,11 @@ li {
 }
 
 #jinalr > h2{
-    font-size: 25px;
+    font-size: 23px;
     margin-bottom: 20px;
     margin-top: 40px;
     font-weight: bold;
+    color: #bdd600;
     
 }
 
@@ -54,10 +55,11 @@ li {
 }
 
 #weple > h2{
-    font-size: 25px;
+    font-size: 23px;
     margin-bottom: 20px;
     margin-top: 40px;
     font-weight: bold;
+    color: #53c7bc;
 }
 
 #wrap2{
@@ -90,10 +92,11 @@ li {
 }
 
 #hera > h2{
-    font-size: 25px;
+    font-size: 23px;
     margin-bottom: 20px;
     margin-top: 40px;
     font-weight: bold;
+    color: #d8e1ea;
 }
 
 
@@ -125,10 +128,11 @@ li {
 }
 
 #ysl > h2{
-    font-size: 25px;
+    font-size: 23px;
     margin-bottom: 20px;
     margin-top: 40px;
     font-weight: bold;
+    color: #fff;
 }
 
 #wrap4{
