@@ -70,20 +70,20 @@ li {
 
 #mainbanner{
     width: 100%;
-    height: 990px;
+    /* height: 990px; */
     overflow: hidden;
     
 }
 
 #sildewrap {
     width:100%;
-    height: 200%;
+    
 
 }
 
 #sildewrap > div{
     width:100%;
-    height: 990px;
+    /* height: 990px; */
     
 }
 
@@ -537,12 +537,12 @@ li {
 
 
 #prev {
-    left:381px;
+    left:430px;
     background: url(../../hera/images/heramoment_btn_n.png) no-repeat left center;
 }
 
 #next {
-    right:387px;
+    right:437px;
     background: url(../../hera/images/heramoment_btn_p.png) no-repeat right center;
 }
 

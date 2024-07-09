@@ -39,15 +39,9 @@
 
     <!-- 메인배너/슬라이드 -->
     <div id="mainbanner">
-        <div id="mainslide">
-            <div id="mainbanner1">
+            <div id="mainimg">
                 <img src="images/mainbanner1.png">
             </div>
-            <div id="mainbanner2">
-                <img src="images/mainbanner2.png">
-                <a href="#">지금 응모하러가기 →</a>
-            </div>
-        </div>
 
         <!-- 왕복/인원 조회 , 날짜선택 및 조회 -->
     <div id="itinerary">
@@ -69,13 +63,13 @@
         </from>
         <from action="" method="post" id="menu2">
             <select>
-                <option>출발지</option>
+                <option  selected>출발지</option>
                 <option>광주</option>
                 <option>서울</option>
                 <option>부산</option>
             </select>
             <select>
-                <option>도착지</option>
+                <option  selected>도착지</option>
                 <option>서울</option>
                 <option>광주</option>
                 <option>제주</option>
@@ -230,18 +224,21 @@
                     play</a>
                 <a href="https://agent.jinair.com/login" target="_blank">대리점바로가기</a>
             </div>
-        </div>
-        <div id="footer_ntc">
-            <p>고객서비스센터 1600-6200, 02-6099-1200 업무시간 오전 09:00 ~ 오후 18:00<br>
-                ㈜진에어대표이사 박병률 사업자등록번호 121-81-89086 통신판매업 신고번호 : 제2008-서울 강서-0408<br>
-                주소 : 서울시 강서구 공항대로 453 개인정보보호책임자 : 이광<br>
-                Copyright © JIN AIR. All Rights Reserved</p>
-        </div>
-        <from action="" method="post" id="emailinput">
-            <h3>뉴스레터신청</h3>
-            <input type="text" placeholder="Email Address">
-            <input type="submit" value="">
-        </from>
+            </div>
+           <div id="wrap2">
+            <div id="footer_ntc">
+                <p>고객서비스센터 1600-6200, 02-6099-1200 업무시간 오전 09:00 ~ 오후 18:00<br>
+                    ㈜진에어대표이사 박병률 사업자등록번호 121-81-89086 통신판매업 신고번호 : 제2008-서울 강서-0408<br>
+                    주소 : 서울시 강서구 공항대로 453 개인정보보호책임자 : 이광<br>
+                    Copyright © JIN AIR. All Rights Reserved</p>
+            </div>
+            <from action="" method="post" id="emailinput">
+                <h3>뉴스레터신청</h3>
+                <input type="text" placeholder="Email Address">
+                <input type="submit" value="">
+            </from>
+           </div>
+        
     </div>
 </body>
 

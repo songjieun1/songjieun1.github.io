@@ -15,28 +15,41 @@ li {
 
 #header{
     width: 100%;
-    
 }
 
 #header_wrap{
     width: 1200px;
-    margin: 0 auto;
     display: flex;
-    justify-content:space-around;
+    min-width: 100%;
+    justify-content: center;
+    
+    
+}
+#header_wrap > div {
+    margin: 10px 30px;
+    
 }
 
-#logo {margin-top: 10px;}
+#logo { 
+    margin-top: 10px;
+    margin-right: 20px;;
+}
+
 #logo > img {
     width: 120px;
     height: 40px;
 }
 
-#nav > ul { display: flex;}
+#nav>ul{
+    display: flex;
+   
+
+}
 
 #nav > ul > li {
     font-size: 16px;
     font-weight: bold;
-    padding: 20px 40px;
+    margin: 10px 40px;
 }
 
 
@@ -63,54 +76,22 @@ li {
     background: #ccc;
 }
 
+
+
 #mainbanner{
     width: 100%;
-    height: 694px;
     overflow: hidden;
     position: relative;
 }
 
-#mainslide{
+#mainimg > img{
     width: 100%;
-    height: 200%;
-
-}
-
-#mainslide > div {
-    width: 100%;
-    height: 694px;
-   
+    height: 69vh;
 }
 
 
-#mainbanner1 > img{
-    width: 100%;
-}
 
-#mainbanner2 {
-    position: relative;
-}
-#mainbanner2 > img{
-    width: 100%;
-}
 
-#mainbanner2 > a {
-    display: block;
-    position: absolute;
-    background-color:rgba(110,110,111,0.7);
-    opacity: 0.7;
-    border-radius: 10px;
-    width: 200px;
-    height: 40px;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    line-height: 40px;
-    bottom:90px;
-    left: 46%;
-
-    
-}
 #itinerary {
     width: 100%;
     position: absolute;
@@ -118,14 +99,15 @@ li {
     z-index: 999;
 }
 #menu1{
-    width: 260px;
+    width: 275px;
+    height: 50px;
     background-color:rgba(110,110,111,0.7);
     display: flex;
     justify-content:space-around;
     align-items: center;
-    margin-left: 350px;
-
-
+    margin-left: 250px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
 }
 
 #menu1 > select {
@@ -141,7 +123,7 @@ li {
 }
 
 #menu1 > select:nth-of-type(2) {
-    padding: 0 10px;
+    padding: 0px 10px;
 }
 
 #menu1 > div {
@@ -159,10 +141,11 @@ li {
 }
 
 #menu2{
+    height: 60px;
     background-color:rgba(110,110,111,0.7);
     display: flex;
     align-items: center;
-    padding-left: 340px;
+    padding-left: 235px;
 
 
 }
@@ -172,6 +155,7 @@ li {
      width: 150px;
      height: 40px;
      border: none;
+     border-radius: 5px;
      margin: 5px 20px;
      padding: 0 5px;
      font-weight: bold;
@@ -182,13 +166,16 @@ li {
     background-color: #bdd600;
     width: 150px;
     height: 40px;
+    color: #232d5b;
+    font-weight: 600;
+    border-radius: 5px;
     text-align: center;
     line-height: 40px;
     margin-left: 20px;
 }
 
 #menuicon {
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     
@@ -196,7 +183,7 @@ li {
 
 #menuicon > div {
     margin:0 20px;
-    font-size: 18px;
+    font-weight: 600;
     
 }
 
@@ -231,7 +218,9 @@ li {
 
 #ticketwrap{
     width: 100%;
+    margin-top: 50px;
 }
+
 #planeticket {
     width: 1200px;
     margin: auto;
@@ -240,7 +229,7 @@ li {
 }
 
 #planeticket > h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-align: left;
     margin: 10px 0;
@@ -257,7 +246,11 @@ li {
 
 
 #ticketlist > div {
-    margin:20px 20px
+    margin:20px 20px;
+}
+
+#ticketlist > div  > a > img{
+    border-radius: 10px;
 }
 #ticketlist > div > h4 {
     font-size: 18px;
@@ -266,12 +259,14 @@ li {
 }
 
 #ticketlist > div > p:nth-of-type(1) {
+    font-size: 14px;
     margin-top: 5px;
     margin-bottom:10px;
 }
 
 #ticketlist> div > p:nth-of-type(2) {
    color: #7a0146;
+   font-weight: 600;
 }
 
 #prev,
@@ -306,10 +301,10 @@ button>span {
 }
 
 
+
 #iconwrap {
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0px;
 
 }
 #iconlist {
@@ -319,6 +314,8 @@ button>span {
     justify-content: center;
     
 }
+
+
 #iconlist > li  {
     margin:0 50px;
   
@@ -326,17 +323,19 @@ button>span {
 
 #iconlist > li > p{
     margin-top: 10px;
-    font-weight: bold;
+    font-weight: 600;
     color: #7a0146;
     text-align: center;
     
 
 }
+
 #n100{
     width: 100%;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 60px 0px;
 }
+
+
 #notice{
     width:1200px;
     margin:auto ;
@@ -344,7 +343,7 @@ button>span {
 }
 
 #notice > h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-align: left;
     margin-bottom: 30px;
@@ -354,7 +353,8 @@ button>span {
 
 
 #notice > ul > li {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 600;
     text-align:left;
     border-bottom: 1px solid #959698;
     padding-bottom: 15px; 
@@ -378,13 +378,12 @@ button>span {
 #notice > ul > li > span {
     float: right;
     color: #959698;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 #footer {
-    background-color: #cacacb;
-    padding: 20px 20px;
-    position: relative;
+    background-color: #cecece;
+    padding: 30px 30px;
 }
 
 #footermenu1 { 
@@ -393,12 +392,11 @@ button>span {
     display: flex;
     line-height: 1.8;
 
-    
 }
 
 #footermenu1 > h5 {
     font-weight: bold;
-    margin-right:20px ;
+    margin-right:47px ;
 }
 
 #footermenu1 > ul {
@@ -407,7 +405,7 @@ button>span {
 }
 #footermenu1 > ul > li {
     margin: 0 10px;
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
@@ -430,7 +428,7 @@ button>span {
 }
 #footermenu2 > ul > li {
     margin: 0 10px;
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
@@ -446,7 +444,7 @@ button>span {
 }
 #footermenu3 > h5 {
     font-weight: bold;
-    margin-right:20px ;
+    margin-right:31px ;
 }
 
 #footermenu3 > ul {
@@ -454,7 +452,7 @@ button>span {
 }
 #footermenu3 > ul > li {
      margin: 0 10px;
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
@@ -465,13 +463,14 @@ button>span {
     width: 1200px;
     margin: auto;
     display: flex;
+    
+    
 
 }
 
 #snslogo {
     display: flex;
     justify-content:left;
-    align-items: center;
     margin-top: 10px;
     
 }
@@ -514,11 +513,14 @@ button>span {
     padding: 8px 0 9px 40px;
 }
 
-
-
-#footer_ntc {
+#wrap2{
     width: 1200px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_ntc {
     font-size: 12px;
     line-height: 1.5;
     color: #4d4c4c;
@@ -526,11 +528,6 @@ button>span {
 }
 
 
-#emailinput {
-    position: absolute;
-    top:120px;
-    right: 350px;
-}
 #emailinput > h3 { 
     color: #4d4c4c;
     margin-bottom: 15px;
@@ -539,7 +536,7 @@ button>span {
 
 #emailinput > input[type=text]{
     width: 200px;
-    height: 30px;
+    height: 35px;
     border: none;
     
 }
@@ -550,7 +547,7 @@ button>span {
 
 #emailinput > input[type=submit]{
     width: 60px;
-    height: 35px;
+    height: 40px;
     border: none;
     background-image: url(../images/footer_logo.png);
     background-repeat: no-repeat;

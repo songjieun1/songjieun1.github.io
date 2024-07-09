@@ -15,30 +15,41 @@ li {
 
 #header{
     width: 100%;
-    
 }
 
 #header_wrap{
     width: 1200px;
-    margin: 0 auto;
     display: flex;
-    justify-content:space-around;
+    min-width: 100%;
+    justify-content: center;
+    
+    
+}
+#header_wrap > div {
+    margin: 10px 30px;
+    
 }
 
-#logo {margin-top: 10px;}
+#logo { 
+    margin-top: 10px;
+    margin-right: 20px;;
+}
 
 #logo > a > img {
     width: 120px;
     height: 40px;
 }
 
-#nav > ul { display: flex;}
+#nav>ul{
+    display: flex;
+   
+
+}
 
 #nav > ul > li {
     font-size: 16px;
     font-weight: bold;
-    padding: 20px 40px;
-    
+    margin: 10px 40px;
 }
 
 
@@ -67,7 +78,6 @@ li {
 
 
 #eventlist {
-    width: 100%;
     margin: 60px 0;
     text-align: center;
 
@@ -80,9 +90,11 @@ li {
 }
 
 #menu {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 #menu > li {
@@ -92,18 +104,20 @@ li {
 
 #menu > li > a {
     display: block;
-    font-size: 16px;
     width: 380px;
     height: 40px;
     line-height: 40px;
+    font-weight: 600;
     background-color: #7a0146;
     color: #fff;
     margin-left: -5px;
 }
 
 
+
 #menu > li > a:hover {
     display: block;
+    box-sizing: border-box;
     width: 380px;
     height: 40px;
     background-color: #fff;
@@ -115,10 +129,11 @@ li {
 
 #list {
     width: 1200px;
-    margin: auto;
+    margin:0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 
 }
 #list > li {
@@ -138,7 +153,7 @@ li {
 }
 
 #list > li > span {
-    font-size: 12px;
+    font-size: 13px;
     color: #959698;
 
 }
@@ -148,27 +163,29 @@ li {
     margin: 0 auto;
     width: 380px;
     height: 40px;
-    font-size: 16px;
+    font-weight: 600;
     line-height: 40px;
     color: #fff;
     background-color: #7a0146;
+   
 }
 
 #eventlist > a:hover {
     width: 380px;
     height: 40px;
+    box-sizing: border-box;
     background-color: #fff;
     border: 1px solid #7a0146;
     color: #000;
+
 } 
 
 
 
 
 #footer {
-    background-color: #cacacb;
-    padding: 20px 20px;
-    position: relative;
+    background-color: #cecece;
+    padding: 30px 30px;
 }
 
 #footermenu1 { 
@@ -177,12 +194,11 @@ li {
     display: flex;
     line-height: 1.8;
 
-    
 }
 
 #footermenu1 > h5 {
     font-weight: bold;
-    margin-right:20px ;
+    margin-right:47px ;
 }
 
 #footermenu1 > ul {
@@ -191,7 +207,7 @@ li {
 }
 #footermenu1 > ul > li {
     margin: 0 10px;
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
@@ -214,7 +230,7 @@ li {
 }
 #footermenu2 > ul > li {
     margin: 0 10px;
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
@@ -230,7 +246,7 @@ li {
 }
 #footermenu3 > h5 {
     font-weight: bold;
-    margin-right:20px ;
+    margin-right:31px ;
 }
 
 #footermenu3 > ul {
@@ -238,7 +254,7 @@ li {
 }
 #footermenu3 > ul > li {
      margin: 0 10px;
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
@@ -249,16 +265,18 @@ li {
     width: 1200px;
     margin: auto;
     display: flex;
+    
+    
 
 }
 
 #snslogo {
     display: flex;
     justify-content:left;
-    align-items: center;
     margin-top: 10px;
     
 }
+
 
 #snslogo > a {
     margin: 0 5px;
@@ -268,7 +286,6 @@ li {
     display: flex;
     align-items: center;
 }
-
 
 #shortcut > h5 {
     color: #4d4c4c;
@@ -298,20 +315,21 @@ li {
     padding: 8px 0 9px 40px;
 }
 
-
-
-#footer_ntc {
+#wrap2{
     width: 1200px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_ntc {
     font-size: 12px;
     line-height: 1.5;
     color: #4d4c4c;
+    
 }
-#emailinput {
-    position: absolute;
-    top:120px;
-    right: 350px;
-}
+
+
 #emailinput > h3 { 
     color: #4d4c4c;
     margin-bottom: 15px;
@@ -320,7 +338,7 @@ li {
 
 #emailinput > input[type=text]{
     width: 200px;
-    height: 30px;
+    height: 35px;
     border: none;
     
 }
@@ -331,7 +349,7 @@ li {
 
 #emailinput > input[type=submit]{
     width: 60px;
-    height: 35px;
+    height: 40px;
     border: none;
     background-image: url(../images/footer_logo.png);
     background-repeat: no-repeat;
@@ -344,4 +362,3 @@ li {
     
 
 }
-

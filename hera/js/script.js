@@ -1,17 +1,17 @@
 $(function () {
 
 
-    // 메인배너 슬라이드
-    setInterval(function () {
+    // // 메인배너 슬라이드
+    // setInterval(function () {
 
-        $('#sildewrap').animate({
-            left: '-100%'
-        },'slow', function () {
-            $('#sildewrap > div:first-child').appendTo('#sildewrap ');
-            $('#sildewrap').css('left', 0);
-        });
+    //     $('#sildewrap').animate({
+    //         left: '-100%'
+    //     },'slow', function () {
+    //         $('#sildewrap > div:first-child').appendTo('#sildewrap ');
+    //         $('#sildewrap').css('left', 0);
+    //     });
         
-    }, 3000);
+    // }, 3000);
 
 
     // 메인이미지 1 스크롤시,

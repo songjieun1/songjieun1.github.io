@@ -1,15 +1,15 @@
 $(function () {
 
-    // 메인배너 슬라이드 
+    // // 메인배너 슬라이드 
 
-    setInterval(function () {
+    // setInterval(function () {
 
-      $('#mainslide').fadeOut( function() {
-         $('#mainslide > div:first-child').appendTo('#mainslide');
-      });
-      $('#mainslide').fadeIn();
+    //   $('#mainslide').fadeOut( function() {
+    //      $('#mainslide > div:first-child').appendTo('#mainslide');
+    //   });
+    //   $('#mainslide').fadeIn();
 
-    }, 2000);
+    // }, 2000);
     
 
     // 최저가항공권 슬라이드 
@@ -22,7 +22,7 @@ $(function () {
             $('#ticketlist').css('left,0');
         });
 
-    }, 2000);
+    }, 2500);
 
     //버튼 클릭시 슬라이드 이동  
     $('#prev').click(function () {
