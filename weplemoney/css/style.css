@@ -21,9 +21,9 @@ li {
 }
 
 #header_wrap{
-    width: 1200px;
-    margin: auto;
-    display: flex;
+    width: 62.5%;
+    margin:0 auto;
+    display:flex;
     justify-content: space-between;
 }
 
@@ -37,17 +37,16 @@ li {
 }
 
 #nav{
-   margin-top: 25px;
+   margin-top: 20px;
 }
 
 #nav > ul {
     display: flex;
-
 }
 
+
 #nav > ul > li {
-    font-size: 18px;
-    font-weight: bold;
+    font-weight:bold;
     color: #53c7bc;
     margin: 0 6px;
 }
@@ -59,12 +58,11 @@ li {
 
 #title {
    padding-top: 80px;
-   display:none;
 }
 
 #title > h3 {
     text-align: center;
-    font-size: 22px;
+    font-size: 1.37em;
     font-weight: bold;
     color: #53c7bc;
     margin-bottom: 10px;
@@ -72,7 +70,7 @@ li {
 
 #title > p {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.87em;
     font-weight: bold;
     color: #53c7bc;
     line-height: 1.2;
@@ -82,7 +80,7 @@ li {
 #mainimg {
     text-align: center;
     margin-top: 30px;
-    display: none;
+    
 }
 
 #mainimg > img{ 
@@ -92,12 +90,14 @@ li {
 
 #mainimg2{
     width:100%;
+    padding-bottom: 40px;
     background-color: #f2f2f3;
     position: relative;
 }
 
 #title2 {
     padding-top: 100px;
+    padding-bottom:50px;
     position: relative;
     z-index: 2;
     left: 300px;
@@ -120,12 +120,12 @@ li {
 #pig {
     position: absolute;
     z-index: 1;
-    bottom: 15px;
-    left: 180px;
+    bottom: 50px;
+    left: 50px;
 }
 
 #pig > img {
-    width: 1000px;
+    width: 980px;
     height: 800px;
 }
 
@@ -139,13 +139,13 @@ li {
 }
 
 #main2> img {
-    width: 850px;
+    width: 830px;
 
 }
 
 #guide {
     background-color: #f9a5bd;
-    padding:0px 20px;
+    padding:20px 20px;
     text-align: center;
     
 }
@@ -158,13 +158,12 @@ li {
 }
 
 #list > li {
-    margin: 30px 60px;
+    margin: 30px 50px;
     color: #fff;
 }
 
 
 #list > li > h4 {
-    font-size: 16px;
     font-weight: bold;
     margin: 15px 0;
 }
@@ -199,37 +198,24 @@ li {
 }
 
 #btn > a:hover{
-    animation-name: wobble-top;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+    animation-name:jelly;
+    animation-duration:0.5s;
+    
 }
 
-@keyframes wobble-top {
-    16.65% {
-      transform: skew(-15deg);
-    }
-  
-    33.3% {
-      transform: skew(12deg);
-    }
-  
-    49.95% {
-      transform: skew(-8deg);
-    }
-  
-    66.6% {
-      transform: skew(5deg);
-    }
-  
-    83.25% {
-      transform: skew(-3deg);
-    }
-  
-    100% {
-      transform: skew(0);
-    }
-  }
+@keyframes jelly {
+    25% {
+        transform: scale(0.9, 1.0);
+      }
+    
+    50% {
+        transform: scale(1.0, 0.9);
+      }
+    
+    75% {
+        transform: scale(0.95, 1.05);
+      }
+}
 
 #footer{
     background-color: #53c7bc;
@@ -241,13 +227,14 @@ li {
     text-align: center;
     font-weight: bold;
     font-size: 15px;
-    margin-bottom: 20px;
+    margin:20px 0px;
 }
 
 #footer > ul {
     display: flex;
     justify-content: center;
     font-weight: bold;
+    font-size: 14px;
     margin-bottom: 15px;
 }
 
@@ -259,6 +246,7 @@ li {
     display: flex;
     justify-content: center;
     font-weight: bold;
+    font-size: 14px;
     align-items: center;
     margin-bottom: 15px;
     
@@ -278,10 +266,4 @@ li {
     display: block;
     background: url(../images/footerlogo_google.png) no-repeat;
     padding: 12px 0 9px 40px;
-}
-
-#footer > p {
-    text-align: center;
-    font-weight: bold;
-    font-size: 13px;
 }

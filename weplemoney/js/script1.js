@@ -1,9 +1,6 @@
 $(function() {
 
 
-    // 메인이미지1 페이드인
-    $('#title').fadeIn("slow");
-    $('#mainimg').fadeIn("slow");
     
 
     //  메인이미지2 스크롤 슬라이드 

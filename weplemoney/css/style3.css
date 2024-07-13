@@ -18,9 +18,9 @@ li {
 }
 
 #header_wrap{
-    width: 1200px;
-    margin: auto;
-    display: flex;
+    width: 62.5%;
+    margin:0 auto;
+    display:flex;
     justify-content: space-between;
 }
 
@@ -34,16 +34,15 @@ li {
 }
 
 #nav{
-   margin-top: 25px;
+   margin-top: 20px;
 }
 
 #nav > ul {
     display: flex;
-
 }
 
+
 #nav > ul > li {
-    font-size: 18px;
     font-weight: bold;
     color: #53c7bc;
     margin: 0 6px;
@@ -184,7 +183,7 @@ li {
 #tb_box > div:nth-of-type(2) > h6 {
     font-size: 15px;
     color: #828383;
-    margin-right: 80px;
+    margin-right: 90px;
 }
 
 #tb_box > div:nth-of-type(2) > input[type=password] {
@@ -299,13 +298,14 @@ li {
     text-align: center;
     font-weight: bold;
     font-size: 15px;
-    margin-bottom: 20px;
+    margin:20px 0px;
 }
 
 #footer > ul {
     display: flex;
     justify-content: center;
     font-weight: bold;
+    font-size: 14px;
     margin-bottom: 15px;
 }
 
@@ -317,6 +317,7 @@ li {
     display: flex;
     justify-content: center;
     font-weight: bold;
+    font-size:14px;
     align-items: center;
     margin-bottom: 15px;
     
@@ -338,8 +339,3 @@ li {
     padding: 12px 0 9px 40px;
 }
 
-#footer > p {
-    text-align: center;
-    font-weight: bold;
-    font-size: 13px;
-}
