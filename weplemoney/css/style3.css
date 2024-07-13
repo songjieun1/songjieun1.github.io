@@ -53,7 +53,7 @@ li {
 }
 
 #guidetitle{
-   width: 1200px;
+   width: 62.5%;
    margin: auto;
    text-align: left;
 }
@@ -71,13 +71,13 @@ li {
 }
 
 #guidetitle > p {
-
+    font-size: 14px;
     color: #f9a5bd;
     line-height: 1.5;
 }
 
 #tabbox{
-    width: 1200px;
+    width:62.5%;
     margin: auto;
 }
 
@@ -125,7 +125,7 @@ li {
     color: #828383;
     font-size: 15px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin:20px 0px;
 
 }
 
@@ -223,7 +223,7 @@ li {
     color: #828383;
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin:20px 0px;
 
 }
 

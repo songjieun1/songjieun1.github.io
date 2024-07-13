@@ -1,8 +1,6 @@
 $(function() {
 
 
-    
-
     //  메인이미지2 스크롤 슬라이드 
     $(window).scroll( function(){
         $('#title2').each( function(i){
