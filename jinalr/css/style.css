@@ -84,7 +84,7 @@ li {
     position: relative;
 }
 
-#mainimg > img{
+#mainimg > a > img{
     width: 100%;
     height: 69vh;
 }
