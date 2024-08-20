@@ -179,8 +179,8 @@ li {
     width: 1200px;
     height: 750px;
     position: relative;
-    margin-right:-300px;
-    opacity:0;
+    /* margin-right:-300px;
+    opacity:0; */
 
 }
 
@@ -248,8 +248,8 @@ li {
     width: 1200px;
     height: 750px;
     position: relative;
-    margin-left: -300px;
-    opacity:0;
+    /* margin-left: -300px;
+    opacity:0; */
 
  
 }
@@ -506,7 +506,7 @@ li {
 #heramomentimg > div > a > img {
     width: 260px;
     height: 252px;
-    padding: 64px 13px;
+    padding: 64px 15px;
 }
 
 #heramomentimg > div > a:nth-of-type(2) {
@@ -518,7 +518,9 @@ li {
 }
 
 
-#prev,
+/* 헤라모먼트 버튼이슈 */
+
+/* #prev,
 #next {
     border: none;
     outline: none;
@@ -548,7 +550,7 @@ li {
 
 button>span {
     display: none;
-}
+} */
 
 
 #footer {
