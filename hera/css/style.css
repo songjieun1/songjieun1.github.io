@@ -70,24 +70,31 @@ li {
 
 #mainbanner{
     width: 100%;
-    /* height: 990px; */
+   
+    
+}
+
+#slide{
+    width: 100%;
     overflow: hidden;
-    
 }
 
-#sildewrap {
-    width:100%;
-    
+#slidewrap {
+    width:200%;
+    /* position:absolute;
+    top: 0;
+    left: 0; */
 
 }
 
-#sildewrap > div{
-    width:100%;
-    /* height: 990px; */
-    
+#slidewrap > div {
+    width:calc(100% / 2);
+    float: left; 
 }
 
-#mainbanner1 {
+
+
+#mainbanner1{
     position: relative;
 }
 
@@ -96,17 +103,17 @@ li {
 }
 
 
-#mainbanner1>h1 {
-    font-size: 25px;
+#mainbanner1 > h1 {
+    font-size: 24px;
     font-weight: bold;
     color: #000;
     position: absolute;
-    bottom: 12%;
-    left: 28%;
+    bottom: 10%;
+    left: 24%;
 
 }
 
-#mainbanner1>a {
+#mainbanner1 > a {
     background-color: #000;
     color: #fff;
     font-size: 20px;
@@ -117,14 +124,13 @@ li {
     text-align: center;
     line-height: 50px;
     position: absolute;
-    bottom: 10.5%;
-    left: 42%;
+    bottom:8.5%;
+    left: 38%;
 
 }
 
-#mainbanner2 {
-    position:relative;
-    
+#mainbanner2{
+    position: relative;
 }
 
 #mainbanner2 > img {
@@ -133,22 +139,22 @@ li {
     
 }
 
-#mainbanner2>h1 {
-    font-size: 60px;
+#mainbanner2 > h1 {
+    font-size: 48px;
     font-weight: bold;
     color: #417a8e;
     padding-bottom: 10px;
     position: absolute;
     bottom: 20%;
-    left: 20%;
+    left: 55%;
 }
 
-#mainbanner2>p {
-    font-size: 40px;
+#mainbanner2 > p {
+    font-size: 28px;
     color: #417a8e;
     position: absolute;
-    bottom: 15%;
-    left: 20%;
+    bottom: 16%;
+    left: 55%;
 }
 
 #mainbanner2 > a {
@@ -163,7 +169,7 @@ li {
     line-height: 50px;
     position: absolute;
     bottom: 7%;
-    left: 20%;
+    left: 55%;
 
 }
 
