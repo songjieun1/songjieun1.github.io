@@ -14,27 +14,29 @@ $(function () {
 
     var lastPage = $(".page").length;
 
-    $html.animate({scrollTop:0},10);
+    $html.animate({ scrollTop: 0 }, 10);
 
     $(window).on("wheel", function (e) {
 
-        if($html.is(":animated")) return;
+        if ($html.is(":animated")) return;
 
-        if(e.originalEvent.deltaY > 0) {
-            if(page == lastPage) return;
+        if (e.originalEvent.deltaY > 0) {
+            if (page == lastPage) return;
 
             page++;
         }
         else if (e.originalEvent.deltaY < 0) {
-            if(page == 1) return;
+            if (page == 1) return;
 
             page--;
         }
-        var posTop = (page-1) * $(window).height();
+        var posTop = (page - 1) * $(window).height();
 
-        $html.animate({scrollTop : posTop });
+        $html.animate({ scrollTop: posTop });
 
     });
+
+
 
 
 
@@ -43,7 +45,7 @@ $(function () {
     var typingIdx = 0;
 
 
-    var typingTxt = $("#header > h3").text();
+    var typingTxt = $("#content > p").text();
 
     typingTxt = typingTxt.split(""); // 한글자씩 나오게자름 
 
@@ -56,7 +58,7 @@ $(function () {
     function typing() {
         if (typingIdx < typingTxt.length) {
             // 타이핑될 텍스트 길이만큼 반복 
-            $("#header").append(typingTxt[typingIdx]);
+            $("#content").append(typingTxt[typingIdx]);
             // 한글자씩 이어주기 
             typingIdx++;
         } else {
@@ -64,7 +66,26 @@ $(function () {
         }
     };
 
+    // 스크롤 시 진행되는 애니메이션
+    var observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animation");
+                } else {
+                    entry.target.classList.remove("animation");
+                }
+            });
+        },
+    );
+    // 애니메이션이 작동할 대상
+    var targetElements = document.querySelectorAll(".animation");
+    targetElements.forEach((element) => {
+        observer.observe(element);
+    });
 
+
+    // 슬라이드
     setInterval(function () {
 
         $('#slide').animate({
