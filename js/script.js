@@ -119,27 +119,105 @@ $(function () {
 
 
     // 슬라이드
-    setInterval(function () {
+    // setInterval(function () {
 
-        $('#slide').animate({
-            left: '-360px'
-        }, 'slow', function () {
-            $('#slide > li:first-child').appendTo('#slide');
-            $('#slide').css('left,0');
+    //     $('#slide').animate({
+    //         left: '-360px'
+    //     }, 'slow', function () {
+    //         $('#slide > li:first-child').appendTo('#slide');
+    //         $('#slide').css('left,0');
+    //     });
+
+    // }, 2000);
+
+    // //버튼 클릭시 슬라이드 이동  
+    // $('#prev').click(function () {
+
+    //     $('#slide > li:first-child').appendTo('#slide')
+
+    // });
+
+    // $('#next').click(function () {
+
+    //     $('#slide > li:last-child').prependTo('#slide')
+
+    // });
+
+    var $imageList = $("#slide > div");
+    var delay = 4000;
+    var duration = 600;
+    var timerId = 0;
+
+    // 다음 이미지로 슬라이드 이동하는 함수
+    function nextImageSlide() {
+        // 슬라이드 함수가 한 번에 여러 번 호출될 경우
+        // 한 번에 여러 이미지가 넘어가는 것을 방지하기 위해
+        // 이미지 이동 중에는 animate 메서드가 호출되지 않도록 함수를 종료
+        if ($imageList.is(":animated")) return;
+
+        // 1-1. ul 요소를 #container 요소의 너비만큼 왼쪽으로 천천히 이동
+        $imageList.animate({ left: "-100%" }, duration, function () {
+            // 1-2. ul 요소의 움직임이 끝나면
+
+            // 1-3. ul 요소의 스타일 속성을 제거
+            // 1-4. ul 요소의 첫 번째 자식 요소를
+            //      ul 요소의 마지막 자식 요소로 이동
+            $(this).removeAttr("style")
+                .children(":first").appendTo(this);
         });
+    }
 
-    }, 2000);
+    // 이전 이미지로 슬라이드 이동하는 함수
+    function prevImageSlide() {
+        if ($imageList.is(":animated")) return;
 
-    //버튼 클릭시 슬라이드 이동  
-    $('#prev').click(function () {
+        // 5-1. ul 요소의 마지막 자식 요소를
+        //      ul 요소의 첫 번째 자식 요소로 이동
+        // 5-2. ul 요소를 #container 요소의 너비만큼 왼쪽으로 바로 이동
+        // 5-3. ul 요소를 원래 위치로 천천히 이동
+        $imageList.prepend($imageList.children(":last"))
+            .css({ left: "-100%" })
+            .animate({ left: 0 }, duration);
 
-        $('#slide > li:first-child').appendTo('#slide')
+    }
 
+    // 1. 일정 시간 마다
+    timerId = window.setInterval(nextImageSlide, delay);
+
+    $("#slide").hover(
+        // 2. #container 요소의 영역에 마우스 커서가 들어가면
+        function () {
+            // 2-1. ul 요소가 움직이지 않도록 한다.
+            window.clearInterval(timerId);
+        },
+        // 3. #container 요소의 영역에서 마우스 커서가 나오면
+        function () {
+            // 3-1. ul 요소가 다시 움직이도록 한다.
+            timerId = window.setInterval(nextImageSlide, delay);
+        }
+    );
+
+
+    // 4. #next 요소를 클릭하면
+    $("#next").on("click", function () {
+        // 기존의 타이머에 의한 슬라이드 이동이
+        // 클릭 이벤트에 의한 슬라이드 이동과 
+        // 거의 동시에 수행되는 경우가 생긴다.
+        // → 버튼을 누를 때만 슬라이드 이동이 되어지고
+        //   다음 이미지까지 일정 시간 보여지도록 타이머를 해제한 다음
+        //   다시 등록한다.
+        window.clearInterval(timerId);
+        timerId = window.setInterval(nextImageSlide, delay);
+
+        // 4-1. 다음 이미지로 슬라이드 이동
+        nextImageSlide();
     });
 
-    $('#next').click(function () {
+    // 5. #prev 요소를 클릭하면
+    $("#prev").on("click", function () {
+        window.clearInterval(timerId);
+        timerId = window.setInterval(nextImageSlide, delay);
 
-        $('#slide > li:last-child').prependTo('#slide')
-
+        prevImageSlide();
     });
 });

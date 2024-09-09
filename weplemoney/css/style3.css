@@ -183,7 +183,7 @@ li {
 #tb_box > div:nth-of-type(2) > h6 {
     font-size: 15px;
     color: #828383;
-    margin-right: 90px;
+    margin-right: 80px;
 }
 
 #tb_box > div:nth-of-type(2) > input[type=password] {
