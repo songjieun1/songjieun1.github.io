@@ -32,10 +32,12 @@ body {
     width: 100%;
     height: 100%;
     background-color: #f8f0e5;
-    cursor: pointer;
+    cursor:url(../images/cursor.png) 5 5, auto;
     
     
 }
+
+
 
 html{
     overflow: hidden;
@@ -43,6 +45,7 @@ html{
 
 body{
     font-family:'Paperlogy-4Regular','Paperlogy-5Medium','Paperlogy-6SemiBold','Paperlogy-7Bold', 'Noto Sans KR', sans-serif;
+    
 }
 
 li {
@@ -140,7 +143,7 @@ a {
 /* 인트로 */
 #content{
     width:990px;
-    height:600px;
+    height:580px;
     margin:0 auto;
     box-sizing:border-box;
     text-align:center;
@@ -155,10 +158,15 @@ a {
 
 #intro {
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 600;
     color: #0f2c59;
     line-height:1.8;
 
+}
+
+#scroll{
+    text-align: center;
+    color: #0f2c59;
 }
 
 
@@ -311,31 +319,32 @@ button > span { display: none;}
     top: 0; left: 0;
 }
 
-#slide2 > div > div {
+#slide2> div > div {
     float: left;
     width: 20%;
 }
 
 
-#list2 > div{
+#list2> div{
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-#list2 > div > a > img {
+#list2> div > a > img {
     margin-right: 60px;
 }
 
-#list2 > div > p{
+#list2> div > p{
     text-align: left;
     font-weight:500;
     color: #0f2c59;
     font-size: 20px;
+    
 }
 
-#prev2, #next2 {
+#prev2, #next2{
     border: none;
     outline: none;
     background-color: transparent;
@@ -344,6 +353,7 @@ button > span { display: none;}
     width: 100px;
     height: 100px;
 
+    /* 상위 요소를 기준으로 좌측 또는 우측 중앙에 배치 */
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

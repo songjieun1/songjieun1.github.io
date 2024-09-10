@@ -67,7 +67,7 @@ $(function () {
     //  intro 타이핑
 
     const txtWrap = document.querySelector('#intro');
-    const txtString = '안녕하세요 어제보다 오늘 더 나아갈 디자이너 / 퍼블리셔 송지은입니다. \n 요즘은 사람들과 만나면 네컷필름 한장 쯤은 꼭 찍지 않나요? \n 네컷필름처럼 빼놓지 않고 봐주셨으면 하는 마음에 이렇게 만들어보았습니다. \n  그냥 나가지 마시고 한번 씩 들여다봐주세요 감사합니다 ^-^!';
+    const txtString = '안녕하세요 꾸준히 나아갈 디자이너 / 퍼블리셔 송지은입니다.\n 요즘은 사람들과 만나면 포토부스에 들려 사진 한장 쯤은 꼭 찍지 않나요? \n 제 포토폴리오도 포토부스처럼 자주 들려주셨으면 합니다! \n 아직 귀엽기만한 결과물이지만 한번 씩 들여다봐주세요 감사합니다😊';
     const txtSpeed = 100;
     const txtDelay = 1000;
     let txtIndex = 0;
@@ -194,9 +194,6 @@ $(function () {
 
         prevImageSlide();
     });
-
-
-    // 디자인 슬라이드
 
 
 
