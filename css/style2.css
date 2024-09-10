@@ -1,12 +1,24 @@
+@font-face {
+    font-family: 'Paperlogy-6SemiBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
 body {
-    font-family: 'gothic a1', sans-serif;
+    font-family:'Paperlogy-6SemiBold','gothic a1', sans-serif;
     color:  #04083f;
+    background-color: #f8f0e5;
+    
 
 }
 
 li {
     list-style: none;
 }
+
+/* 진에어 */
 
 #jinalr{
     width:1200px;
@@ -20,8 +32,7 @@ li {
     font-size: 23px;
     margin-bottom: 20px;
     margin-top: 40px;
-    font-weight: bold;
-    color: #bdd600;
+    font-weight:600;
     
 }
 
@@ -46,6 +57,8 @@ li {
     float: left;
 }
 
+/* 위플머니 */
+
 #weple{
     width: 1200px;
     height: 783px;
@@ -57,8 +70,7 @@ li {
     font-size: 23px;
     margin-bottom: 20px;
     margin-top: 40px;
-    font-weight: bold;
-    color: #53c7bc;
+    font-weight:600;
 }
 
 #wrap2{
@@ -82,26 +94,29 @@ li {
     float: left;
 }
 
-#hera{
+#slide2 > div >img {
     width: 1200px;
-    height: 725px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-
+    height: 680px;
 }
 
-#hera > h2{
+/* 입생로랑 */
+
+#ysl{
+    width: 1200px;
+    height: 585px;
+    margin: 0 auto;
+}
+
+#ysl > h2{
     font-size: 23px;
     margin-bottom: 20px;
     margin-top: 40px;
-    font-weight: bold;
-    color: #d8e1ea;
+    font-weight:600;
 }
-
 
 #wrap3{
     width: 1200px;
-    height: 625px;
+    height: 485px;
     position: relative;
     overflow: hidden;
 }
@@ -116,42 +131,12 @@ li {
 
 #slide3 > div{
     width: 1200px;
-    height: 625px;
-    float: left;
-}
-
-#ysl{
-    width: 1200px;
-    height: 585px;
-    margin: 0 auto;
-}
-
-#ysl > h2{
-    font-size: 23px;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    font-weight: bold;
-    color: #fff;
-}
-
-#wrap4{
-    width: 1200px;
-    height: 485px;
-    position: relative;
-    overflow: hidden;
-}
-
-#slide4{
-    width: 200%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
-}
-
-#slide4 > div{
-    width: 1200px;
     height: 485px;
     float: left;
+}
+
+#slide3 > div > img{
+    width: 1200px;
+    height: 420px;
 }
 
