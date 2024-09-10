@@ -137,7 +137,7 @@ a {
     margin: 0 auto;
 }
 
-/* 소개 / 프로필 */
+/* 인트로 */
 #content{
     width:990px;
     height:600px;
@@ -162,6 +162,7 @@ a {
 }
 
 
+/* 프로필 */
 
 #profile > h3{
     font-size: 22px;
@@ -202,6 +203,8 @@ a {
     margin:10px 10px;
 }
 
+/* 웹페이지 작업물 */
+
 #wrap > h3 {
     font-size: 22px;
     font-weight: 600;
@@ -236,7 +239,6 @@ a {
 }
 
 
-
 #list > div{
     display: flex;
     justify-content: center;
@@ -259,11 +261,6 @@ a {
     font-weight:600;
     
 }
-
-
-
-
-
 
 #prev, #next {
     border: none;
@@ -289,7 +286,79 @@ a {
     right: 10px;
     background: url(../images/btn_r.png) no-repeat right center;
 }
+
 button > span { display: none;}
+
+
+/* 디자인 작업물 */
+
+#slidewrap2{
+    position: relative;
+    margin-top:80px;
+}
+
+#slide2{
+   width: 990px;
+   margin:0 auto;
+   text-align: center;
+   overflow: hidden;
+   
+}
+
+#slide2 > div{
+    width: 500%;
+    position: relative;
+    top: 0; left: 0;
+}
+
+#slide2 > div > div {
+    float: left;
+    width: 20%;
+}
+
+
+#list2 > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#list2 > div > a > img {
+    margin-right: 60px;
+}
+
+#list2 > div > p{
+    text-align: left;
+    font-weight:500;
+    color: #0f2c59;
+    font-size: 20px;
+}
+
+#prev2, #next2 {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+#prev2 {
+    left: 10px;
+    background: url(../images/btn_l.png) no-repeat left center;
+}
+#next2 {
+    right: 10px;
+    background: url(../images/btn_r.png) no-repeat right center;
+}
+
 
 
 /* end */
