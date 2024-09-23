@@ -85,7 +85,7 @@ a {
     text-align: center;
     position: absolute;
     z-index: 999;
-    /* top: -20px */
+    
 }
 
 #camera>img {
@@ -130,25 +130,17 @@ a {
     top: 40px;
 }
 
-/* .page:nth-of-type(2) > #camera {
-    top: -20px;
-} */
 
 .page:nth-of-type(2) > #wrap {
     margin: 0 auto;
 }
 
-/* .page:nth-of-type(3) > #camera {
-    top: -20px;
-} */
+
 
 .page:nth-of-type(3) > #wrap {
     margin: 0 auto;
 }
 
-/* .page:nth-of-type(4) > #camera {
-    top: -20px;
-} */
 
 .page:nth-of-type(4) > #wrap {
     margin: 0 auto;
