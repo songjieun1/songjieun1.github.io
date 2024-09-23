@@ -33,7 +33,7 @@ body {
     height: 100%;
     background-color: #f8f0e5;
     cursor:url(../images/cursor.png) 5 5, auto;
-    
+    min-width: 1200px;
     
 }
 
@@ -63,6 +63,21 @@ a {
     position: relative;
 }
 
+#w50{
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50%,-25%);
+}
+
+#w5050{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+
 /* 기본프레임 */
 
 #camera {
@@ -70,8 +85,7 @@ a {
     text-align: center;
     position: absolute;
     z-index: 999;
-    ;
-    top: -20px
+    /* top: -20px */
 }
 
 #camera>img {
@@ -105,7 +119,7 @@ a {
 
 #wrap {
     width: 1180px;
-    height: 630px;
+    height: 625px;
     box-sizing: border-box;
     margin: 0 auto;
     margin-top: 40px;
@@ -116,25 +130,25 @@ a {
     top: 40px;
 }
 
-.page:nth-of-type(2) > #camera {
+/* .page:nth-of-type(2) > #camera {
     top: -20px;
-}
+} */
 
 .page:nth-of-type(2) > #wrap {
     margin: 0 auto;
 }
 
-.page:nth-of-type(3) > #camera {
+/* .page:nth-of-type(3) > #camera {
     top: -20px;
-}
+} */
 
 .page:nth-of-type(3) > #wrap {
     margin: 0 auto;
 }
 
-.page:nth-of-type(4) > #camera {
+/* .page:nth-of-type(4) > #camera {
     top: -20px;
-}
+} */
 
 .page:nth-of-type(4) > #wrap {
     margin: 0 auto;
