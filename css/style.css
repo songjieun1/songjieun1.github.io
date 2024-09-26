@@ -66,8 +66,8 @@ a {
     /* 배경 격자 */
     --background-color: #f8f0e5;
     --line-color : #FFF;
-    --spacing :20px;
-    --line-thickness :1.2px;
+    --spacing :15px;
+    --line-thickness :1px;
     --line-spacing : calc(var(--spacing) - var(--line-thickness));
 
     background:
