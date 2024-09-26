@@ -67,7 +67,7 @@ $(function () {
     //  intro 타이핑
 
     const txtWrap = document.querySelector('#intro');
-    const txtString = '안녕하세요 꾸준히 나아갈 디자이너 / 퍼블리셔 송지은입니다.\n 요즘은 사람들과 만나면 포토부스에 들려 사진 한장 쯤은 꼭 찍지 않나요? \n 제 포토폴리오도 포토부스처럼 자주 들려주셨으면 합니다! \n 아직 귀엽기만한 결과물이지만 한번 씩 들여다봐주세요 감사합니다😊';
+    const txtString = '안녕하세요. 꾸준함과 노력은 저의 기본 값!\n 회사와 함께 성장해나가는 디자이너이자 퍼블리셔가 되고 싶은 송지은입니다. \n 아직은 부족한 결과물들이지만 한 번씩 들여다봐주세요 감사합니다😊';
     const txtSpeed = 100;
     const txtDelay = 1000;
     let txtIndex = 0;

@@ -61,6 +61,20 @@ a {
     width: 100%;
     height: 100%;
     position: relative;
+
+   
+    /* 배경 격자 */
+    --background-color: #f8f0e5;
+    --line-color : #FFF;
+    --spacing :20px;
+    --line-thickness :1.2px;
+    --line-spacing : calc(var(--spacing) - var(--line-thickness));
+
+    background:
+    linear-gradient(to bottom, transparent var(--line-spacing), var(--line-color) var(--line-spacing)) 0 0 / 100vw var(--spacing) repeat-y,
+    linear-gradient(to right, transparent var(--line-spacing), var(--line-color) var(--line-spacing)) 0 0 / var(--spacing) 100vh repeat-x
+    var(--background-color); 
+   
 }
 
 #w50{
@@ -342,6 +356,11 @@ button > span { display: none;}
     margin-right: 60px;
 }
 
+#list2> div > a > img:nth-of-type(5){
+    width: 280px;
+    height: 290px;
+}
+
 #list2> div > p{
     text-align: left;
     font-weight:500;
@@ -390,6 +409,7 @@ button > span { display: none;}
     height: 570px;
     padding-top: 30px;
     text-align: center;
+    box-shadow: 5px 5px 5px #cbcbcb;
     
 
 }
